@@ -2,6 +2,8 @@
 
 This project is a fake Salesforce API. I created it to have a mock Salesforce service for running honeypot in development.
 
+<img width="1329" alt="Screenshot 2022-03-06 at 10 03 05" src="https://user-images.githubusercontent.com/2529820/156916434-e3d0f3f6-514f-41cc-9fee-104bdf09e00a.png">
+
 ## Running
 
     go build .
