@@ -18,8 +18,8 @@ This project is a fake Salesforce API. I created it to have a mock Salesforce se
 
 ## Building docker image
 
-    docker build . -t registry.atrzaska.com/honeypotio/salesforce-honeypot:latest
-    docker run -p 4000:4000 registry.atrzaska.com/honeypotio/salesforce-honeypot
+    docker build . -t honeypotio/salesforce-honeypot:latest
+    docker run -p 4000:4000 honeypotio/salesforce-honeypot
 
 ## License
 
