@@ -38,7 +38,7 @@ func getQuery(c *gin.Context) {
 func getOpportunities(c *gin.Context) {
 	c.JSON(http.StatusOK, gin.H{
 		"records": []interface{}{
-			map[string]interface{}{
+			gin.H{
 				"Start_of_Billed_Membership_Date__c": "2022-01-01",
 				"Contract_End_Date__c":               "2042-12-31",
 				"Number_of_Hires__c":                 99,
@@ -58,15 +58,26 @@ func getOpportunities(c *gin.Context) {
 }
 
 func getAccount(c *gin.Context) {
-	c.JSON(http.StatusOK, gin.H{"Account_ID_18__c": 123, "OwnerId": 234})
+	c.JSON(http.StatusOK, gin.H{
+		"records": []interface{}{
+			gin.H{
+				"Account_ID_18__c": 123,
+				"OwnerId":          234,
+			},
+		},
+	})
 }
 
 func getOwner(c *gin.Context) {
 	c.JSON(http.StatusOK, gin.H{
-		"Name":           "John Doe",
-		"MediumPhotoUrl": "https://www.fakepersongenerator.com/Face/female/female20171026166672180.jpg",
-		"Username":       "jane.doe@honeypot.io",
-		"Phone":          "+49123123123",
-		"MobilePhone":    "+49234234234",
+		"records": []interface{}{
+			gin.H{
+				"Name":           "John Doe",
+				"MediumPhotoUrl": "https://www.fakepersongenerator.com/Face/female/female20171026166672180.jpg",
+				"Username":       "jane.doe@honeypot.io",
+				"Phone":          "+49123123123",
+				"MobilePhone":    "+49234234234",
+			},
+		},
 	})
 }
