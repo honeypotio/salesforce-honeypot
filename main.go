@@ -42,7 +42,7 @@ func getOpportunities(c *gin.Context) {
 				"Start_of_Billed_Membership_Date__c": "2022-01-01",
 				"Contract_End_Date__c":               "2042-12-31",
 				"Number_of_Hires__c":                 99,
-				"Is_Active__c":                       true,
+				"Active_opportunity__c":              true,
 				"Automatically_Renews__c":            true,
 				"Last_Day_to_Cancel__c":              "2042-12-01",
 				"Bear_Type__c":                       "Big Bear",
